@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="keywords" content="" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- bootstrap-css -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <!--// bootstrap-css -->
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <!--搜索框链接-->
+    <link href="css/style1.css" rel="stylesheet">
+    <!--blog.css-->
+    <link rel="stylesheet" href="css/blog.css">
+    <!--// css -->
+    <!-- font-awesome icons -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- //font-awesome icons -->
+    <!-- font -->
+    <!--<link href="http://fonts.googleapis.com/css?family=Playball&amp;subset=latin-ext" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700italic,700,400italic,300italic,300' rel='stylesheet' type='text/css'>-->
+    <!-- //font -->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event){
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+            });
+        });
+    </script>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!-- banner -->
+<div class="banner about-banner">
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="w3layouts-logo col-md-5">
+                    <h2>
+                        <a href="index.html">哺乳纲生物检索<span><sup>Mammalian organisms</sup></span></a>
+                    </h2>
+                </div>
+                <!-- 搜索框 -->
+                <div class="col-md-5">
+                    <form action="" class="parent">
+                        <div class="search-container">
+                            <input type="text" class="search" placeholder="搜索">
+                            <button type="submit" class="search-button"></button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-2">
+                    <a href="login.html">
+                        <img src="images/登录图标.png" alt="图片描述" width="40px" height="40px">
+                    </a>
+                </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+    <div class="header-bottom">
+        <div class="container">
+            <div class="top-nav">
+                <nav class="navbar navbar-default">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling 首页导航栏 -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a class="active list-border" href="index.html">首页</a></li>
+                            <li><a href="about.html">物种推荐</a></li>
+                            <li class=""><a href="#" class="dropdown-toggle hvr-bounce-to-bottom" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">分类检索<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="hvr-bounce-to-bottom" href="gallery.html">国一物种</a></li>
+                                    <li><a class="hvr-bounce-to-bottom" href="guo2.html">国二物种</a></li>
+                                    <li><a class="hvr-bounce-to-bottom" href="sanyou.html">三有动物</a></li>
+                                    <li><a class="hvr-bounce-to-bottom" href="yesheng.html">野生动物</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="icons.html">分类介绍</a></li>
+                            <li><a href="blog.html">物种详情</a></li>
+                            <li><a class="list-border1" href="contact.html">我要举报</a></li>
+                        </ul>
+                        <div class="clearfix"> </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- //banner -->
+<div class="about-heading">
+    <div class="container">
+        <h2>物种详情</h2>
+        <br>
+        <!--图片文字部分-->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="thumbnail">
+                    <img src="images/穿山甲s.jpg" alt=""width="520px" height="400px">
+                </div>
+                <div class="d-flex justify-content-center">
+                    <div class="col-md-4" style="margin-left: -16px;margin-top: -25px">
+                        <div class="thumbnail">
+                            <img src="images/穿山甲1.jpg" alt="..." width="200px" height="200px">
+                        </div>
+                    </div>
+                    <div class="col-md-4" style="margin-left: 4px;margin-top: -25px">
+                        <div class="thumbnail">
+                            <img src="images/穿山甲2.jpg" alt="..." width="200px" height="200px">
+                        </div>
+                    </div>
+                    <div class="col-md-4" style="margin-right: 4px;margin-top: -25px">
+                        <div class="thumbnail">
+                            <img src="images/穿山甲3.jpg" alt="..." width="200px" height="200px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 bor">
+                <div class="wrapper" id="boor">
+                    <h3>中华穿山甲</h3>
+                    <h4>拉丁名： <span>Manis pentadactyla</span></h4>
+                    <br>
+                    <div class="wrapper" id="sty"><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;生物学分类</h5></div>
+                    <div class="wrapper" style="margin-top: 15px"><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;界：<span>动物界</span></h5></div>
+                    <div class="wrapper" style="margin-top: 15px"><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;门：<span>脊索动物门</span></h5></div>
+                    <div class="wrapper" style="margin-top: 15px"><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;纲：<span>哺乳纲</span></h5></div>
+                    <div class="wrapper" style="margin-top: 15px"><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;目：<span>鳞甲目 </span></h5></div>
+                    <div class="wrapper" style="margin-top: 15px"><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;科：<span>穿山甲科 </span></h5></div>
+                    <div><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;属：<span>穿山甲属</span></h5></div>
+                </div>
+            </div>
+        </div>
+        <!--文字介绍部分-->
+        <!--标签文字-->
+        <div class="foft">
+            <div class="circle-container">
+                <div class="glyphicon glyphicon-inbox"></div>
+            </div>
+            <h3>动物学史</h3>
+        </div>
+        <br>
+        <div class="foft1">
+            <p>中华穿山甲（学名：Manis pentadactyla）：是鳞甲目、穿山甲科的哺乳动物。头体长42-92厘米，尾长28-35厘米，体重2-7千克；鳞片与体轴平行，共15-18列。尾巴上另有纵向鳞片9-10片。鳞片棕褐色，老年兽的鳞片边缘橙褐或灰褐色，幼兽尚未角化的鳞片呈黄色。吻细长。脑颅大，呈圆锥形。具有一双小眼睛，形体狭长，全身有鳞甲，四肢粗短，尾扁平而长，背面略隆起。不同个体体重和身长差异极大。舌长，无齿。耳不发达。足具5趾，并有强爪；前足爪长，尤以中间第3爪特长，后足爪较短小。全身鳞甲如瓦状。</p>
+        </div>
+        <br>
+
+        <div class="foft">
+            <div class="circle-container">
+                <div class="glyphicon glyphicon-inbox"></div>
+            </div>
+            <h3>形态特征</h3>
+        </div>
+        <br>
+        <div class="foft1">
+            <p>中华穿山甲头体长42-92厘米，尾长28-35厘米，体重2-7千克；吻细长。脑颅大，呈圆锥形。具有一双小眼睛，形体狭长，全身有鳞甲，四肢粗短，尾扁平而长，背面略隆起。不同个体体重和身长差异极大。头呈圆锥状，眼小，吻尖。舌长，无齿。耳不发达。足具5趾，并有强爪；前足爪长，尤以中间第3爪特长，后足爪较短小。全身鳞甲如瓦状。鳞片与体轴平行，共15-18列自额顶部至背、四肢外侧、尾背腹面都有。尾上另有纵向鳞片9-10片。鳞甲从背脊中央向两侧排列，呈纵列状。鳞片呈棕色，腹部的鳞片略软，呈灰白色，老年兽的鳞片边缘橙褐或灰褐色，幼兽尚未角化的鳞片呈黄色。鳞有三种形状：背鳞成阔的菱形，鳞基有纵纹，边缘光滑。纵纹条数不一，随鳞片大小而定。腹侧、前肢近腹部内侧和后肢鳞片成盾状，中央有龙骨状突起，鳞基也有纵纹。尾侧鳞成折合状。鳞片之间杂有硬毛。两颊、眼、耳以及颈腹部、四肢外侧、尾基都生有长的白色和棕黄色稀疏的硬毛。绒毛极少。成体两相邻鳞片基部毛相合，似成束状。雌体有乳头一对。和同属中的其他物种的差别是耳朵露在外面。</p>
+        </div>
+        <br>
+
+        <div class="foft">
+            <div class="circle-container">
+                <div class="glyphicon glyphicon-inbox"></div>
+            </div>
+            <h3>栖息环境</h3>
+        </div>
+        <br>
+        <div class="foft1">
+            <p>中华穿山甲是特化物种、视觉基本退化、尤以嗅觉灵敏。 穿山甲的肝脏不大，肝解毒功能弱，免疫系统弱，属于单室胃，胃中披着角质膜，胃腺部的黏膜处密布许多呈"S"型的皱襞，借吞食时吞进胃中的小砂石将食物磨碎。穿山甲肠管表面平滑，小肠长。 中华穿山甲栖息于丘陵、山麓、平原的树林潮湿地带。生活于各种各样的栖息地，包括热带森林、针叶林、常绿阔叶林、竹林、草原和农田。</p>
+        </div>
+        <br>
+
+        <div class="foft">
+            <div class="circle-container">
+                <div class="glyphicon glyphicon-inbox"></div>
+            </div>
+            <h3>生活习性</h3>
+        </div>
+        <br>
+        <div class="foft1">
+            <p>喜炎热，能爬树。能在泥土中挖深2-4米、直径20-30厘米的洞。末端的巢直径约2米。以长舌舐食白蚁、蚁、蜜蜂或其他昆虫。猛兽、猛禽为天敌，偶尔遭家犬袭击。
+                中华穿山甲过着孤独的生活。虽然它们是高度陆地动物，但它们也完全有能力攀爬树木，还有很好的游泳能力。穿山甲经常缓慢地移动四肢，用自己的指关节，其前爪卷曲在下面，产生一些非常独特的足迹。偶尔，它们可能会抬起后腿，身体更加直立，前肢保持在空中，这也是攻击白蚁巢穴时所采取的姿势。</p>
+        </div>
+        <br>
+
+        <div class="foft">
+            <div class="circle-container">
+                <div class="glyphicon glyphicon-inbox"></div>
+            </div>
+            <h3>分布范围</h3>
+        </div>
+        <br>
+        <div class="container" id="ssy">
+            <img src="images/分布范围4.png" alt="">
+
+        </div>
+
+    </div>
+</div>
+<!-- blog -->
+<div class="blog">
+    <div class="container">
+        <div class="agile-blog-grids">
+            <div class="col-md-8 agile-blog-grid-left">
+
+
+                <nav>
+                    <ul class="pagination">
+                        <li>
+                            <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">«</span>
+                            </a>
+                        </li>
+                        <li><a href="blog.html">1</a></li>
+                        <li><a href="blog1.html">2</a></li>
+                        <li><a href="blog2.html">3</a></li>
+                        <li><a href="blog3.html">4</a></li>
+                        <li><a href="blog4.html">5</a></li>
+                        <li>
+                            <a href="#" aria-label="Next">
+                                <span aria-hidden="true">»</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+</div>
+<!-- //blog -->
+<!-- footer -->
+<div class="footer">
+    <div class="container">
+        <div class="agile-footer-grids">
+            <h3>与此同时希望大家,希望大家坚决拒绝食用野生动物的行为</h3>
+            <h4>积极告诫，劝阻自己的亲人不要使用野生动物，配合支持相关执法行动</h4>
+        </div>
+    </div>
+</div>
+
+<!-- //copyright -->
+<script src="js/SmoothScroll.min.js"></script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<!-- here stars scrolling icon -->
+<script type="text/javascript">
+    $(document).ready(function() {
+        /*
+            var defaults = {
+            containerID: 'toTop', // fading element id
+            containerHoverID: 'toTopHover', // fading element hover id
+            scrollSpeed: 1200,
+            easingType: 'linear'
+            };
+        */
+
+        $().UItoTop({ easingType: 'easeOutQuart' });
+
+    });
+</script>
+<!-- //here ends scrolling icon -->
+<script src="http://www.cssmoban.com/js/tongji.js"></script><script src="http://www.cssmoban.com/js/youxia.js" type="text/javascript"></script></body>
+</html>

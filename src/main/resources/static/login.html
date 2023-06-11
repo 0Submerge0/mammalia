@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>登录页面</title>
+	<!-- 页面样式 -->
+	<link href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<style>
+		/* 背景图片 */
+		body{
+			background: #fff url(images/长颈鹿登录背景.jpg) center 0;
+			background-size: cover;
+			-webkit-background-size: cover;
+			-o-background-size: cover;
+		}
+		/* 注册表单容器 */
+		.form {
+			position:absolute;
+			top:50%;
+			left:50%;
+			transform:translate(-50%,-50%);
+			width:450px;
+			padding:50px;
+			background: rgba(0,0,0,.8);
+			box-sizing:border-box;
+			box-shadow: 0px 15px 25px rgba(0,0,0,.5);
+			border-radius:15px;
+		}
+		/* 标题 */
+		.form__title {
+			margin:0 0 30px;
+			padding:0;
+			color: #fff;
+			text-align:center;
+			font-family: 'Lato', sans-serif;
+			font-weight: bold;
+			font-size: 36px;
+		}
+		/* 输入框容器 */
+		.form__input-box {
+			position:relative;
+		}
+		/* 输入框样式 */
+		.form__input {
+			width: 100%;
+			padding:10px 0;
+			font-size:16px;
+			color:#fff;
+			letter-spacing: 1px;
+			margin-bottom: 30px;
+			border:none;
+			border-bottom: 1px solid #f0f0f0;
+			outline:none;
+			background: transparent;
+			font-family: 'Lato', sans-serif;
+		}
+		/* 输入框标签样式 */
+		.form__label {
+			position:absolute;
+			top:0px;
+			left:0px;
+			padding:10px 0;
+			font-size: 16px;
+			color:#fff;
+			pointer-events:none;
+			transition:.5s;
+			font-family: 'Lato', sans-serif;
+		}
+		/* 输入框聚焦和填写后的标签样式 */
+		.form__input:focus ~ .form__label,
+		.form__input:valid ~ .form__label {
+			top:-18px;
+			left:0;
+			color:#03a9f4;
+			font-size:14px;
+		}
+		/* 注册按钮样式 */
+		.form__submit-btn {
+			background: #03a9f4;
+			border:none;
+			outline:none;
+			font-size: 16px;
+			color:#fff;
+			padding:15px 20px;
+			cursor: pointer;
+			border-radius:50px;
+			font-family: 'Lato', sans-serif;
+			transition:.5s;
+		}
+		.form__submit-btn:hover{
+			background-color:#2D3B55;
+		}
+		/* 链接按钮样式 */
+		.form__link-btn {
+			float: right;
+			color: #fff;
+			margin-left: 10px;
+			font-family: 'Lato', sans-serif;
+			text-decoration: underline;
+			transition:.5s;
+		}
+		.form__link-btn:hover{
+			color:#03a9f4;
+		}
+		/* 图标样式 */
+		.fa-user, .fa-envelope {
+			position: absolute;
+			top: 17px;
+			left: 15px;
+			color: #ccc;
+			font-size: 20px;
+		}
+		.fa-lock {
+			position: absolute;
+			top: 17px;
+			left: 15px;
+			color: #ccc;
+			font-size: 20px;
+		}
+		/* 性别选择框 */
+		.form__input-box select{
+			width: 100%;
+			padding:10px 0;
+			font-size:16px;
+			color:#fff;
+			letter-spacing: 1px;
+			margin-bottom: 30px;
+			border:none;
+			border-bottom: 1px solid #f0f0f0;
+			outline:none;
+			background: transparent;
+			font-family: 'Lato', sans-serif;
+		}
+		/* 注册按钮容器 */
+		.form__submit-box{
+			display:flex;
+			justify-content:center;
+		}
+	</style>
+</head>
+<body>
+<div class="form">
+	<h2 class="form__title">哺乳纲生物科普系统</h2>
+	<form id="info">
+		<!-- 用户名输入框 -->
+		<div class="form__input-box">
+			<i class="fas fa-user"></i>
+			<input id="username" class="form__input" type="text" name="userName" required="">
+			<label class="form__label" for="username">账号</label>
+		</div>
+		<!-- 密码输入框 -->
+		<div class="form__input-box">
+			<i class="fas fa-lock"></i>
+			<input id="password" class="form__input" type="password" name="psw" required="">
+			<label class="form__label" for="password">密码</label>
+		</div>
+
+		<!-- 注册按钮 -->
+		<div class="form__submit-box">
+			<button id="loginBtn"  type="submit" class="form__submit-btn btn btn-primary btn-lg btn-block">登录</button>
+		</div>
+		<!-- 登录链接 -->
+		<a href="register.html" class="form__link-btn" style="font-size: 15px">点击注册</a>
+	</form>
+</div>
+
+<script>
+	function toggleForm() {
+		section = document.querySelector('section');
+		div = document.querySelector('.div');
+		div.classList.toggle('active');
+		section.classList.toggle('active');
+	}
+
+	$("#info").submit(function (event) {
+		event.preventDefault();
+		$.ajax({
+			url: "http://localhost:8080/login",
+			type: "POST",
+			data: {
+				"username": $('input[name="userName"]').val(),
+				"password": $('input[name="psw"]').val(),
+			}
+			,
+			success:
+					function (response) {
+						let flag = response.result;
+						if (flag) {
+							if ($('input[name="identity"]:checked').val() === "admin")
+								window.location.href = "index.html";
+							else
+								window.location.href = "index.html";
+						}
+					}
+		})
+	});
+	$("#registerBtn").click(function (event) {
+		event.preventDefault();
+		if ($('input[name="registerPassword"]').val() === $('input[name="ensurePassword"]').val()) {
+			$.ajax({
+				url: "http://localhost:8080/register",
+				type: "POST",
+				data: {
+					"userName": $('input[name="userName"]').val(),
+					"email": $('input[name="email"]').val(),
+					"userPassword": $('input[name="registerPassword"]').val()
+				},
+				success:
+						function (response) {
+							let flag = response.result;
+							if (flag)
+								window.location.href = "user/index.html";
+						}
+			})
+		} else alert("两次密码输入不一致");
+	});
+</script>
+
+</body>
+</html>

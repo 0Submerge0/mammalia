@@ -1,0 +1,33 @@
+.search-container {
+    position: relative;
+}
+
+.search {
+    padding-left: 50px;
+    width: 450px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    background-color: transparent;
+    color: #fff;
+    font-color: white;
+}
+
+.search::placeholder {
+    color: #fff;
+}
+
+.search-button {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-image: url('../images/搜索符号标签.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    background-color: transparent;
+}

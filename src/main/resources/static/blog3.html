@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="keywords" content="" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- bootstrap-css -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <!--// bootstrap-css -->
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <!--搜索框链接-->
+    <link href="css/style1.css" rel="stylesheet">
+    <!--blog.css-->
+    <link rel="stylesheet" href="css/blog.css">
+    <!--// css -->
+    <!-- font-awesome icons -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- //font-awesome icons -->
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event){
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+            });
+        });
+    </script>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!-- banner -->
+<div class="banner about-banner">
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="w3layouts-logo col-md-5">
+                    <h2>
+                        <a href="index.html">哺乳纲生物检索<span><sup>Mammalian organisms</sup></span></a>
+                    </h2>
+                </div>
+                <!-- 搜索框 -->
+                <div class="col-md-5">
+                    <form action="" class="parent">
+                        <div class="search-container">
+                            <input type="text" class="search" placeholder="搜索">
+                            <button type="submit" class="search-button"></button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-2">
+                    <a href="login.html">
+                        <img src="images/登录图标.png" alt="图片描述" width="40px" height="40px">
+                    </a>
+                </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+    <div class="header-bottom">
+        <div class="container">
+            <div class="top-nav">
+                <nav class="navbar navbar-default">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling 首页导航栏 -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a class="active list-border" href="index.html">首页</a></li>
+                            <li><a href="about.html">物种推荐</a></li>
+                            <li class=""><a href="#" class="dropdown-toggle hvr-bounce-to-bottom" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">分类检索<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="hvr-bounce-to-bottom" href="gallery.html">国一物种</a></li>
+                                    <li><a class="hvr-bounce-to-bottom" href="guo2.html">国二物种</a></li>
+                                    <li><a class="hvr-bounce-to-bottom" href="sanyou.html">三有动物</a></li>
+                                    <li><a class="hvr-bounce-to-bottom" href="yesheng.html">野生动物</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="icons.html">分类介绍</a></li>
+                            <li><a href="blog.html">物种详情</a></li>
+                            <li><a class="list-border1" href="contact.html">我要举报</a></li>
+                        </ul>
+                        <div class="clearfix"> </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- //banner -->
+<div class="about-heading">
+    <div class="container">
+        <h2>物种详情</h2>
+        <br>
+        <!--图片文字部分-->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="thumbnail">
+                    <img src="images/蜂猴.jpg" alt=""width="520px" height="400px">
+                </div>
+                <div class="d-flex justify-content-center">
+                    <div class="col-md-4" style="margin-left: -16px;margin-top: -25px">
+                        <div class="thumbnail">
+                            <img src="images/蜂猴1.jpg" alt="..." width="200px" height="200px">
+                        </div>
+                    </div>
+                    <div class="col-md-4" style="margin-left: 4px;margin-top: -25px">
+                        <div class="thumbnail">
+                            <img src="images/蜂猴2.jpg" alt="..." width="200px" height="200px">
+                        </div>
+                    </div>
+                    <div class="col-md-4" style="margin-right: 4px;margin-top: -25px">
+                        <div class="thumbnail">
+                            <img src="images/蜂猴3.jpg" alt="..." width="200px" height="200px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 bor">
+                <div class="wrapper" id="boor">
+                    <h3>蜂猴</h3>
+                    <h4>拉丁名： <span>Nycticebus bengalensis</span></h4>
+                    <br>
+                    <div class="wrapper" id="sty"><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;生物学分类</h5></div>
+                    <div class="wrapper" style="margin-top: 15px"><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;界：<span>动物界</span></h5></div>
+                    <div class="wrapper" style="margin-top: 15px"><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;门：<span>脊索动物门</span></h5></div>
+                    <div class="wrapper" style="margin-top: 15px"><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;纲：<span>哺乳纲</span></h5></div>
+                    <div class="wrapper" style="margin-top: 15px"><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;目：<span>灵长目 </span></h5></div>
+                    <div class="wrapper" style="margin-top: 15px"><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;科：<span>懒猴科 </span></h5></div>
+                    <div><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;属：<span>蜂猴属</span></h5></div>
+                </div>
+            </div>
+        </div>
+        <!--文字介绍部分-->
+        <!--标签文字-->
+        <div class="foft">
+            <div class="circle-container">
+                <div class="glyphicon glyphicon-inbox"></div>
+            </div>
+            <h3>动物学史</h3>
+        </div>
+        <br>
+        <div class="foft1">
+            <p>蜂猴（学名：Nycticebus bengalensis）：是灵长目、懒猴科、蜂猴属的物种。是体型较小的一种原猴类，背部有致密的棕色皮毛，下体白色。有一条清晰的深色条纹，一直延伸到头顶，但没有向耳朵的侧面延伸。前臂和手几乎是白色的。四肢颜色从褐色到几乎白色。换毛可能会导致背部表面颜色的季节性变化。像其他蜂猴一样，它的尾巴仅残留很少，头圆而耳朵短。有鼻孔周围潮湿的裸露表面的鼻腔，宽而平坦的脸和大眼睛。眼睛反射出明亮的橙色眼睛光芒。在其前趾，第二个小于其余趾爪；后趾的大脚趾与其他脚趾相对，从而增强了其抓地力。其后脚的第二个脚趾弯曲，可用来抓挠和修饰，而其他指甲则笔直。</p>
+        </div>
+        <br>
+
+        <div class="foft">
+            <div class="circle-container">
+                <div class="glyphicon glyphicon-inbox"></div>
+            </div>
+            <h3>形态特征</h3>
+        </div>
+        <br>
+        <div class="foft1">
+            <p>蜂猴是蜂猴属中所有物种体型最大的一种，其头骨长为6.5厘米，体重1-2千克，体长28-38厘米，是最小的倭蜂猴体重的三倍以上。头圆，耳朵和口吻短，眼睛大而凸出，橙红色。它们的爪趾专为攀爬而设计，其相反的拇指与其他四个指骨明显不同，从而使手指可以像钳子一样抓握。这种强大的抓地力弥补了其缺乏尾巴的麻烦。蜂猴没有性二态性。雄性和雌性看起来相似，只能通过观察性腺来区分。雄性蜂猴睾丸的平均重量为1.2克，输精管长度为85.5毫米。后足第2趾具爪，其余趾（指）均具扁甲。</p>
+        </div>
+        <br>
+
+        <div class="foft">
+            <div class="circle-container">
+                <div class="glyphicon glyphicon-inbox"></div>
+            </div>
+            <h3>栖息环境</h3>
+        </div>
+        <br>
+        <div class="foft1">
+            <p>蜂猴是夜行性和树栖性动物。它们更喜欢树冠较高的区域和森林边缘，那里的昆虫更加丰富。它们常年居住在东南亚的热带和亚热带雨林以及半常绿雨林中。但是，由于森林砍伐和土地开发，其栖息地遭到破坏的情况越来越严重，它们被迫生活在灌木林中。该物种喜欢较大、较高的树冠，这些树冠较浓密，这与较高的食物丰度有关，并且具有致密的微生境，可以保护它们免受天敌的侵害。与原始森林相比，蜂猴更喜欢较早种植的人工林，并避开树冠浅稀的栖息地。</p>
+        </div>
+        <br>
+
+        <div class="foft">
+            <div class="circle-container">
+                <div class="glyphicon glyphicon-inbox"></div>
+            </div>
+            <h3>生活习性</h3>
+        </div>
+        <br>
+        <div class="foft1">
+            <p>蜂猴的家庭区域重叠且大小不同。它们的物种数量密度一般为每平方千米1.27-4.26只。 这种重叠取决于竞争者的数量和它们所占据地区的栖息地质量。
+                蜂猴很少表现出互相攻击性，通常生活在家庭中。尽管有些个体是孤独生活，但大多数物种生活在社交环境中。 社会群体中没有统治等级。它们每晚单独或成对行走20-30米，通常睡在树洞或茂密的植被中，有时也睡在一些树皮上，一生中可能会占据多达60个树洞。它们可以和其他猴种共享领地，观察到它们与倭蜂猴在间隔数米内在同一棵树上觅食，倭蜂猴与蜂猴是同属动物。</p>
+        </div>
+        <br>
+
+        <div class="foft">
+            <div class="circle-container">
+                <div class="glyphicon glyphicon-inbox"></div>
+            </div>
+            <h3>分布范围</h3>
+        </div>
+        <br>
+        <div class="container" id="ssy">
+            <img src="images/分布范围3.png" alt="">
+
+        </div>
+
+    </div>
+</div>
+<!-- blog -->
+<div class="blog">
+    <div class="container">
+        <div class="agile-blog-grids">
+            <div class="col-md-8 agile-blog-grid-left">
+
+
+                <nav>
+                    <ul class="pagination">
+                        <li>
+                            <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">«</span>
+                            </a>
+                        </li>
+                        <li><a href="blog.html">1</a></li>
+                        <li><a href="blog1.html">2</a></li>
+                        <li><a href="blog2.html">3</a></li>
+                        <li><a href="blog3.html">4</a></li>
+                        <li><a href="blog4.html">5</a></li>
+                        <li>
+                            <a href="#" aria-label="Next">
+                                <span aria-hidden="true">»</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+</div>
+<!-- //blog -->
+<!-- footer -->
+<div class="footer">
+    <div class="container">
+        <div class="agile-footer-grids">
+            <h3>与此同时希望大家,希望大家坚决拒绝食用野生动物的行为</h3>
+            <h4>积极告诫，劝阻自己的亲人不要使用野生动物，配合支持相关执法行动</h4>
+        </div>
+    </div>
+</div>
+<!-- //footer -->
+<!-- copyright -->
+<div class="copyright">
+    <div class="container">
+        <p>Copyright &copy; 2017.Company name All rights reserved.<a target="_blank" href="http://www.cssmoban.com/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+    </div>
+</div>
+<!-- //copyright -->
+<script src="js/SmoothScroll.min.js"></script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<!-- here stars scrolling icon -->
+<script type="text/javascript">
+    $(document).ready(function() {
+        /*
+            var defaults = {
+            containerID: 'toTop', // fading element id
+            containerHoverID: 'toTopHover', // fading element hover id
+            scrollSpeed: 1200,
+            easingType: 'linear'
+            };
+        */
+
+        $().UItoTop({ easingType: 'easeOutQuart' });
+
+    });
+</script>
+<!-- //here ends scrolling icon -->
+<script src="http://www.cssmoban.com/js/tongji.js"></script><script src="http://www.cssmoban.com/js/youxia.js" type="text/javascript"></script></body>
+</html>

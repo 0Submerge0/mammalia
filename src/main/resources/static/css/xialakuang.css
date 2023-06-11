@@ -1,0 +1,115 @@
+.dropdown-menu {
+    border: 2px solid yellow;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 5px yellow;
+}
+
+.dropdown-menu li a:hover {
+    background-color: gray;
+    box-shadow: 0 0 5px black;
+}
+#gang{
+    background-color: #FFFFFF;
+    border: 1px solid yellow;
+    border-radius: 5px;
+    color: #c0a16b;
+    width: 150px; /* 调整选择框的宽度 */
+    height: 40px; /* 调整选择框的高度 */
+    opacity: 0.8; /* 背景透明度 */
+    transition: border-color 0.3s, box-shadow 0.3s; /* 添加过渡效果 */
+}
+#gang:hover{
+    background-color: #5e5e5e;
+    border-color: blue; /* 鼠标悬停时的边框颜色 */
+    box-shadow: 0 0 5px blue; /* 鼠标悬停时的外发光效果 */
+}
+#yagang{
+    background-color: #FFFFFF;
+    border: 1px solid yellow;
+    border-radius: 5px;
+    color: #c0a16b;
+    width: 150px; /* 调整选择框的宽度 */
+    height: 40px; /* 调整选择框的高度 */
+    opacity: 0.8; /* 背景透明度 */
+    transition: border-color 0.3s, box-shadow 0.3s; /* 添加过渡效果 */
+}
+#yagang:hover{
+    background-color: #5e5e5e;
+    border-color: blue; /* 鼠标悬停时的边框颜色 */
+    box-shadow: 0 0 5px blue; /* 鼠标悬停时的外发光效果 */
+}
+#ke{
+    background-color: #FFFFFF;
+    border: 1px solid yellow;
+    border-radius: 5px;
+    color: #c0a16b;
+    width: 150px; /* 调整选择框的宽度 */
+    height: 40px; /* 调整选择框的高度 */
+    opacity: 0.8; /* 背景透明度 */
+    transition: border-color 0.3s, box-shadow 0.3s; /* 添加过渡效果 */
+}
+#ke:hover{
+    background-color: #5e5e5e;
+    border-color: blue; /* 鼠标悬停时的边框颜色 */
+    box-shadow: 0 0 5px blue; /* 鼠标悬停时的外发光效果 */
+}
+#mu{
+    background-color: #FFFFFF;
+    border: 1px solid yellow;
+    border-radius: 5px;
+    color: #c0a16b;
+    width: 150px; /* 调整选择框的宽度 */
+    height: 40px; /* 调整选择框的高度 */
+    opacity: 0.8; /* 背景透明度 */
+    transition: border-color 0.3s, box-shadow 0.3s; /* 添加过渡效果 */
+}
+#mu:hover{
+    background-color: #5e5e5e;
+    border-color: blue; /* 鼠标悬停时的边框颜色 */
+    box-shadow: 0 0 5px blue; /* 鼠标悬停时的外发光效果 */
+}
+#shu{
+    background-color: #FFFFFF;
+    border: 1px solid yellow;
+    border-radius: 5px;
+    color: #c0a16b;
+    width: 150px; /* 调整选择框的宽度 */
+    height: 40px; /* 调整选择框的高度 */
+    opacity: 0.8; /* 背景透明度 */
+    transition: border-color 0.3s, box-shadow 0.3s; /* 添加过渡效果 */
+}
+#shu:hover{
+    background-color: #5e5e5e;
+    border-color: blue; /* 鼠标悬停时的边框颜色 */
+    box-shadow: 0 0 5px blue; /* 鼠标悬停时的外发光效果 */
+}
+#zhong{
+    background-color: #FFFFFF;
+    border: 1px solid yellow;
+    border-radius: 5px;
+    color: #c0a16b;
+    width: 150px; /* 调整选择框的宽度 */
+    height: 40px; /* 调整选择框的高度 */
+    opacity: 0.8; /* 背景透明度 */
+    transition: border-color 0.3s, box-shadow 0.3s; /* 添加过渡效果 */
+}
+#zhong:hover{
+    background-color: #5e5e5e;
+    border-color: blue; /* 鼠标悬停时的边框颜色 */
+    box-shadow: 0 0 5px blue; /* 鼠标悬停时的外发光效果 */
+}
+#sousuo{
+    background-color: #FFFFFF;
+    border: 1px solid yellow;
+    border-radius: 5px;
+    color: #c0a16b;
+    width: 100px; /* 调整选择框的宽度 */
+    height: 40px; /* 调整选择框的高度 */
+    opacity: 0.8; /* 背景透明度 */
+    transition: border-color 0.3s, box-shadow 0.3s; /* 添加过渡效果 */
+}
+#sousuo:hover{
+    background-color: #5e5e5e;
+    border-color: blue; /* 鼠标悬停时的边框颜色 */
+    box-shadow: 0 0 5px blue; /* 鼠标悬停时的外发光效果 */
+}

@@ -1,0 +1,113 @@
+.custom-container {
+    background-color: #e5e5e5;
+    height: 500px;
+}
+.row [class^="col-md-6"] {
+    margin-right: -35px;
+}
+
+.row [class^="col-md-6"] + [class^="col-md-6"] {
+    margin-left: -35px;
+}
+
+/**/
+.one h6{
+    font-family: 'Playball', cursive;
+    letter-spacing: 5px;/*字体间距*/
+}
+.one h3{
+    font-family: "Bookman Old Style", serif;
+    letter-spacing: 3px;/*字体间距*/
+    line-height: 30px;
+}
+.tow{
+    width: 450px;
+    height: auto;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+.tow h4{
+    font-family: 'YourArtisticFont', sans-serif;
+    letter-spacing: 3px;/*字体间距*/
+    line-height: 30px;
+}
+.tow h5{
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+.circle-container {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #c0a16b;
+}
+
+.circle-container .glyphicon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+}
+/* 调整标签位置 */
+.tow {
+    overflow: hidden; /* 清除浮动 */
+}
+
+.circle-container {
+    float: left; /* 左浮动 */
+    margin-left: 10px; /* 调整与内容之间的间距 */
+    margin-top: 30px;/* 调整与内容上下的位置 */
+
+}
+#nnn{
+    margin-left: 19px;
+}
+#nnn2{
+    margin-left: 16px;
+}
+.row.col-md-4{
+    margin-left: 20px;
+}
+.wrapper {
+    border-bottom: 1px solid #000;
+    padding-bottom: 10px; /* 可选，用于调整直线与内容之间的间距 */
+}
+/*摄影作品*/
+.row .col-md-4{
+    position: relative;
+}
+.row .col-md-4::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0px; /* 调整间隔的宽度 */
+    bottom: 0;
+    width: 10px; /* 间隔的宽度 */
+    background-color: #e5e5e5;
+}
+.anniu{
+    margin-left: 0px;
+}
+.anniu a {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #000;
+    text-decoration: none;
+}
+
+.anniu a .glyphicon {
+    margin-left: 5px;
+}
+#pian{
+    margin-top: 20px;
+}
+#pian1{
+    margin-top: 20px;
+}
